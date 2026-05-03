@@ -1,0 +1,68 @@
+# targets.txt - endpoint list for zapret.ps1 tests
+#
+# Format:
+#   KeyName = "https://host..."   -> Runs HTTP/TLS checks + ping
+#   KeyName = "PING:1.2.3.4"       -> Ping only
+#
+# Keys must be a single word (letters/digits/underscore), because the
+# script parses them as simple identifiers. You can add or remove lines.
+
+### Discord
+DiscordMain           = "https://discord.com"
+DiscordGateway        = "https://gateway.discord.gg"
+DiscordCDN            = "https://cdn.discordapp.com"
+DiscordUpdates        = "https://updates.discord.com"
+
+### YouTube
+YouTubeWeb            = "https://www.youtube.com"
+YouTubeShort          = "https://youtu.be"
+YouTubeImage          = "https://i.ytimg.com"
+YouTubeVideoRedirect  = "https://redirector.googlevideo.com"
+
+### Google
+GoogleMain            = "https://www.google.com"
+GoogleGstatic         = "https://www.gstatic.com"
+
+### Cloudflare
+CloudflareWeb         = "https://www.cloudflare.com"
+CloudflareCDN         = "https://cdnjs.cloudflare.com"
+
+### Public DNS (PING-only)
+CloudflareDNS1111     = "PING:1.1.1.1"
+CloudflareDNS1001     = "PING:1.0.0.1"
+GoogleDNS8888         = "PING:8.8.8.8"
+GoogleDNS8844         = "PING:8.8.4.4"
+Quad9DNS9999          = "PING:9.9.9.9"
+
+### Dead by Daylight
+DbDMain               = "https://deadbydaylight.com"
+DbDStore              = "https://store.deadbydaylight.com"
+DbDForums             = "https://forum.deadbydaylight.com"
+DbDSupport            = "https://support.deadbydaylight.com"
+DbDEasyAntiCheat      = "https://download.easyanticheat.net"
+DbDStats              = "https://stats.deadbydaylight.com"
+DbDMatchmaking        = "PING:34.117.69.170"     # Google Cloud - US
+DbDMatchmakingEU      = "PING:34.140.255.162"    # Google Cloud - EU
+DbDMatchmakingAsia    = "PING:34.126.179.241"    # Google Cloud - Asia
+DbDGameServerUSEast   = "PING:3.216.72.161"      # AWS - US East
+DbDGameServerUSWest   = "PING:54.191.213.205"    # AWS - US West
+DbDGameServerEU       = "PING:52.57.89.60"       # AWS - EU
+DbDGameServerAsia     = "PING:13.124.81.103"     # AWS - Asia
+DbDGameServerSouthAm  = "PING:54.94.160.125"     # AWS - South America
+
+### Telegram
+TelegramMain          = "https://telegram.org"
+TelegramWeb           = "https://web.telegram.org"
+TelegramTme           = "https://t.me"
+TelegramDesktop       = "https://tdesktop.com"
+TelegramCDN           = "https://cdn.telegram.org"
+TelegramGraph         = "https://telegra.ph"
+TelegramTon           = "https://ton.org"
+TelegramAPI           = "https://api.telegram.org"
+TelegramMTProtoDC1    = "PING:149.154.175.50"    # DC1 - Netherlands
+TelegramMTProtoDC2    = "PING:149.154.167.51"    # DC2 - Netherlands
+TelegramMTProtoDC3    = "PING:149.154.175.100"   # DC3 - US
+TelegramMTProtoDC4    = "PING:149.154.167.91"    # DC4 - Netherlands
+TelegramMTProtoDC5    = "PING:149.154.171.5"     # DC5 - Singapore
+TelegramVoiceSTUN     = "PING:149.154.175.205"   # Voice calls STUN
+TelegramVoiceTurn     = "PING:149.154.167.205"   # Voice calls TURN
